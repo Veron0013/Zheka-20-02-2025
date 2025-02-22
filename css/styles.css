@@ -36,7 +36,7 @@ img {
 
 .container {
 	box-sizing: border-box;
-	max-width: 1250px;
+	max-width: 1310px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
@@ -96,15 +96,15 @@ button {
 
 .header-btn {
 	border-radius: 8px;
-	padding: 12px 24px;
-	border: 2px solid transparent;
+	padding: 16px 28px;
 	/*height: 48px;*/
 	font-weight: 500;
+	text-align: center;
 	font-size: 16px;
 	line-height: 1.5;
-	letter-spacing: 0.03em;
+	letter-spacing: 0.5px;
 	color: #fff;
-	background-color: transparent;
+	transition: 1.9ms ease;
 }
 
 .header-btn:first-child {
@@ -112,11 +112,15 @@ button {
 }
 
 .cover {
-	border: 2px solid #9333ea;
 	border-radius: 8px;
 	width: 127px;
-	/*height: 48px;*/
+	line-height: 1.2;
 	background-color: #9333ea;
+}
+
+.header-btn:hover {
+	background-color: #9333ea;
+	font-weight: 800;
 }
 
 /*  */
@@ -337,70 +341,201 @@ button {
 }
 
 /*  */
-.app {}
+.app {
+	background-color: #581c87;
+	padding: 80px 0;
+}
 
-.app-content {}
+.app-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*flex-wrap: wrap;*/
+	gap: 80px;
+}
 
-.app-info {}
+.app-info {
+	max-width: 385px;
+}
 
-.app-image {}
+.app-image {
+	display: inline-block;
+	padding: 0;
+	border-radius: 50px;
+}
 
-.app-review {}
+.app-review {
+	flex-shrink: 0;
+	max-width: 385px;
 
-.app-review-list {}
+	.ideas-text {
+		margin-bottom: 16px;
+	}
+}
 
-.app-review-image {}
+.app-review-list {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.app-review-image {
+	margin-right: 16px;
+}
 
 .app-review-text-container {}
 
 .app-review-text {}
 
 /*  */
-.design {}
+.design {
+	padding: 80px 0;
+	background-color: #fff;
+}
 
-.design-content {}
+.design-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
 
-.design-title {}
+.design-title {
+	font-weight: 800;
+	font-size: 56px;
+	line-height: 1.1;
+	color: #0f172a;
+}
 
-.design-button {}
+.design-button {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	color: #9333ea;
+	border-radius: 8px;
+	padding: 12px 0px;
+}
 
-.design-list {}
+.design-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+}
 
 .design-list-itm {}
 
-.design-itm-container {}
+.design-itm-container {
+	margin-bottom: 24px;
+	position: relative;
+}
 
-.design-itm-upper-text {}
+.design-itm-upper-text {
+	top: 16px;
+	left: 16px;
+	position: absolute;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #6b21a8;
+	background: #f3e8ff;
+	border-radius: 4px;
+	padding: 8px 4px;
+	max-width: fit-content;
+}
 
-.design-image {}
+.design-image {
+	border-radius: 5px;
+}
 
-.design-itm-low-text {}
+.design-itm-low-text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.1;
+	color: #0f172a;
+	margin-bottom: 4px;
+}
 
-.design-itm-title {}
+.design-itm-title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.1;
+	color: #0f172a;
+	margin-bottom: 16px;
+}
 
 /*  */
-.footer {}
+.footer {
+	background-color: #fff;
+	padding: 80px 0;
+}
 
-.footer-upper {}
+.footer-upper {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 48px;
+	padding: 48px 0;
+}
 
 .footer .logo {
 	color: #0f172a;
 }
 
-.footer-nav {}
+.footer-nav {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 48px;
+}
 
-.footer-nav-itm {}
+.footer-nav-itm {
+	display: flex;
+	align-items: start;
+	justify-content: start;
+	flex-direction: column;
+}
 
-.footer-nav-title {}
+.footer-nav-title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.1;
+	color: #94a3b8;
+	padding: 12px 0px;
+}
 
-.footer-list-link {}
+.footer-list-link {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #0f172a;
+	padding: 12px 0px;
+}
 
-.footer-lower {}
+.footer-lower {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 48px 0;
+}
 
-.footer-cr {}
+.footer-cr {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #0f172a;
+}
 
-.footer-social-list {}
+.footer-social-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
 
 .footer-social-itm {}
 
-.footer-icons {}
+.footer-icons {
+	fill: #0f172a;
+}
